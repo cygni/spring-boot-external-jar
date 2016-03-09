@@ -5,4 +5,4 @@ MAINTAINER emil.breding@cygni.se
 EXPOSE 8080
 VOLUME /data
 
-CMD java -jar -Xmx256m /data/app.jar
+CMD java -jar ${JAVA_OPTS:--Xmx1024m} /data/app.jar
